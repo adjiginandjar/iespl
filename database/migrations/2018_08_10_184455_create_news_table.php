@@ -15,7 +15,7 @@ class CreateNewsTable extends Migration
     {
         Schema::create('sone_esports_news', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('partner_id');
+            $table->integer('partner_id')->references('id')->on('sone_esports_news_partner');
             $table->string('title');
             $table->string('image');
             $table->string('description');

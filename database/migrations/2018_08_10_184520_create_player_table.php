@@ -15,8 +15,8 @@ class CreatePlayerTable extends Migration
     {
         Schema::create('sone_esports_player', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('team_id');
-            $table->integer('team_id');
+            $table->integer('team_id')->references('id')->on('sone_esports_team');
+            $table->integer('game_id')->references('id')->on('sone_esports_game');
             $table->string('name');
             $table->string('nick');
             $table->string('country');

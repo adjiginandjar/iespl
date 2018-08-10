@@ -15,7 +15,7 @@ class CreatePlayerMetaTable extends Migration
     {
         Schema::create('sone_esports_player_meta', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('player_id');
+            $table->integer('player_id')->references('id')->on('sone_esports_player');
             $table->string('meta_key');
             $table->text('meta_value');
             $table->timestamps();

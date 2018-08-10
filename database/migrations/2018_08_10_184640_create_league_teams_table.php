@@ -15,8 +15,8 @@ class CreateLeagueTeamsTable extends Migration
     {
         Schema::create('sone_esports_league_teams', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('team_id');
-            $table->integer('league_id');
+            $table->integer('team_id')->references('id')->on('sone_esports_team');
+            $table->integer('league_id')->references('id')->on('sone_esports_league');
             $table->timestamps();
         });
     }
