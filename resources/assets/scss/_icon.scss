@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Iespl Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/icon/iespl-icon.eot); /* For IE6-8 */
+  src: local('Iespl Icons'),
+       local('Iespl-icon'),
+       // url(../fonts/Iespl-icon.woff2) format('woff2'),
+       url(../fonts/icon/iespl-icon.woff) format('woff'),
+       url(../fonts/icon/iespl-icon.ttf) format('truetype');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'Iespl Icons' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.icon-iespl:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-play:before {
+  content: "\e905";
+}
+.icon-pb:before {
+  content: "\e9c3";
+}
+.icon-dota:before {
+  content: "\e9c2";
+}
+.icon-cs:before {
+  content: "\e90a";
+}
+.icon-fifa:before {
+  content: "\e909";
+}
+.icon-ml:before {
+  content: url('../images/ico_game/logo-ml.png');
+}
+.icon-chevron-right:before {
+  content: "\e90d";
+}
+.icon-chevron-left:before {
+  content: "\e90e";
+}
+.icon-dot:before {
+  content: "\f111";
+}
+.icon-medal:before {
+  content: "\e90b";
+}
+.icon-trophy:before {
+  content: "\e90c";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-youtube:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-twitch:before {
+  content: "\f1e8";
+}
+.icon-tokped:before {
+  content: "\e902";
+}
+.icon-maps:before {
+  content: "\f041";
+}
+.icon-calendar:before {
+  content: "\f133";
+}

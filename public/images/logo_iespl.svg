@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.318 17.745">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_3_1" data-name="Symbol 3 – 1" transform="translate(-24.841 -37.942)">
+    <rect id="Rectangle_139290" data-name="Rectangle 139290" class="cls-1" width="4.615" height="17.722" transform="translate(24.841 37.942)"/>
+    <path id="Path_344332" data-name="Path 344332" class="cls-1" d="M28.4,0H43.376V4.615H28.4ZM43.376,11.169H28.4V6.553H43.376ZM28.4,13.107H43.376v4.615H28.4Z" transform="translate(2.994 37.942)"/>
+    <path id="Path_344333" data-name="Path 344333" class="cls-1" d="M116.776,4.615H106.415V6.553h10.361V17.745H101.8V13.107h10.361V11.169H101.8V0h14.976Z" transform="translate(-53.468 37.942)"/>
+    <path id="Path_344334" data-name="Path 344334" class="cls-1" d="M179.715,17.722H175.1V0h14.976V11.169H179.715Zm5.746-13.107h-5.746V6.553h5.746Z" transform="translate(-109.854 37.942)"/>
+    <path id="Path_344335" data-name="Path 344335" class="cls-1" d="M263.476,17.745H248.5V0h4.615V13.107h10.361Z" transform="translate(-166.317 37.942)"/>
+  </g>
+</svg>

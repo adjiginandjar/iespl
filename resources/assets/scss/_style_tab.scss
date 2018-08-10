@@ -1,0 +1,26 @@
+@media (max-width: 991.98px) { 
+    .content {
+        padding: 0px 20px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .slider-1 {
+            position: relative;
+            overflow: visible;
+            .thumb {
+              margin: 15px 5px;
+            }
+        }
+        .section-2 {
+            .section-left {
+                width: 100%;
+            }
+        }
+    }
+    .only-mobile {
+        display: none !important;
+    }
+    .only-desk {
+        display: block !important;
+    }
+}

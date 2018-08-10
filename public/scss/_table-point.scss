@@ -1,0 +1,213 @@
+
+.points_table {
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+	thead {
+		width: 100%;
+		display: inline-block;
+  		color: $color-tokped-darkgrey;
+		tr {
+	      	width: 100%;
+		  	border: 1px solid transparent;
+		  	display: flex;
+	   		flex-wrap: wrap;
+		}
+		>tr {
+			>th {
+				float: left;
+				border-bottom-width: 0;
+			}
+		}
+	}
+	tbody {
+		height: 100%;
+		color: $color-tokped-darkgrey;
+		overflow-y: auto;
+		width: 100%;
+		display: inline-block;
+		td {
+			float: left;
+      		border-bottom-width: 0;
+    }
+    tr {
+	  border: 1px solid transparent;
+	  display: flex;
+      flex-wrap: wrap;
+
+      &:hover {
+        border: 1px solid $color-tokped-green;
+      }
+    }
+	}
+	tr {
+		width: 100%;
+	    display: inline-block;
+	    border-radius: 8px;
+	}
+	td {
+		display: inline-block;
+	}
+	th {
+		display: inline-block;
+	}
+	>tbody {
+		>tr {
+			>td {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+		        line-height: 32px;
+		        font-size: 14px;
+				font-weight: normal;
+				display: inline-block;
+		        &:nth-child(2){
+			        text-align: left;
+					text-transform: uppercase;
+					white-space: nowrap;
+					a {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						max-width: 4ch;
+					}
+		          	img {
+			            height: 30px;
+			            width: 25px;
+			            object-fit: contain;
+			            margin-right: 10px;
+		          	}
+		        }
+      		}
+	      &:nth-child(4){
+	        text-align: left;
+	        border-bottom: 1px solid $color-tokped-green;
+	        border-radius: 0;
+	        }
+				>th {
+					padding: 4px;
+					height: 40px;
+					text-align: center;
+	        line-height: 32px;
+
+				}
+			}
+		}
+	>tfoot {
+		>tr {
+			>td {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+				line-height: 32px;
+				display: inline-block;
+			}
+			>th {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+				line-height: 32px;
+				display: inline-block;
+			}
+		}
+	}
+	>thead {
+		>tr {
+			>td {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+				line-height: 32px;
+				display: inline-block;
+			}
+			>th {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+				display: inline-block;
+        line-height: 32px;
+        font-size: 10px;
+       font-weight: normal;
+       &:nth-child(2){
+          text-align: left;
+       }
+			}
+		}
+	}
+}
+.odd {
+	background: $color-tokped-white;
+}
+.even {
+
+}
+.odd, .even {
+	&.activeTeam {
+		border: 1px solid $color-tokped-green;
+		background-color: $color-tokped-lightgreen;
+	}
+}
+.points_table_scrollbar {
+	height: 612px;
+	overflow-y: scroll;
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+		border-radius: 10px;
+		background-color: #444444;
+	}
+	&::-webkit-scrollbar {
+		width: 1%;
+		min-width: 5px;
+		background-color: #F5F5F5;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: #D62929;
+		background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
+	}
+}
+
+
+.reg {
+	width: 100%;
+    position: relative;
+
+	tbody {
+		height: 100%;
+		overflow-y: auto;
+		width: 100%;
+		display: inline-block;
+		td {
+			float: left;
+			border-bottom-width: 0;
+		}
+		tr {
+			width: 100%;
+			border: 1px solid transparent;
+			display: flex;
+			flex-wrap: wrap;
+			border-radius: 8px;
+			td {
+				padding: 4px;
+				height: 40px;
+				text-align: center;
+				line-height: 32px;
+				font-size: 14px;
+				font-weight: normal;
+				&:last-child {
+					text-align: left;
+				}
+				&:first-child {
+					font-size: 16px;
+				}
+				i {
+					font-size: 18px;
+				}
+
+			}
+			&:hover {
+				border: 1px solid $color-tokped-green;
+			}
+		}
+    }
+}
+

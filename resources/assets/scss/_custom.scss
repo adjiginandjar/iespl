@@ -1,0 +1,97 @@
+  // Fonts =======================================
+
+  @font-face {
+    font-family: 'Rubik Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/rubik/kincir-icon.eot); /* For IE6-8 */
+    src: local(Rubik Regular normal),
+         local(Rubik Regular normal),
+         // url(../fonts/kincir-icon.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Regular.woff) format('woff'),
+         url(../fonts/rubik/Rubik-Regular.ttf) format('truetype'),
+         url(../fonts/rubik/Rubik-Regular.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Regular.eot) format('embedded-opentype');
+ }
+ @font-face {
+    font-family: 'Rubik Bold';
+    font-style: normal;
+    src: url(../fonts/rubik/kincir-icon.eot); /* For IE6-8 */
+    src: local(Rubik Regular normal),
+         local(Rubik Regular normal),
+         // url(../fonts/kincir-icon.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Bold.woff) format('woff'),
+         url(../fonts/rubik/Rubik-Bold.ttf) format('truetype'),
+         url(../fonts/rubik/Rubik-Bold.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Bold.eot) format('embedded-opentype');
+ }
+ @font-face {
+    font-family: 'Rubik Medium';
+    font-style: normal;
+    src: url(../fonts/rubik/kincir-icon.eot); /* For IE6-8 */
+    src: local(Rubik Regular bold),
+         local(Rubik Regular bold),
+         // url(../fonts/kincir-icon.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Medium.woff) format('woff'),
+         url(../fonts/rubik/Rubik-Medium.ttf) format('truetype'),
+         url(../fonts/rubik/Rubik-Medium.woff2) format('woff2'),
+         url(../fonts/rubik/Rubik-Medium.eot) format('embedded-opentype');
+ }
+ @font-face {
+  font-family: 'Rubik Light';
+  font-style: normal;
+  src: url(../fonts/rubik/kincir-icon.eot); /* For IE6-8 */
+  src: local(Rubik Regular lighter),
+       local(Rubik Regular lighter),
+       // url(../fonts/kincir-icon.woff2) format('woff2'),
+       url(../fonts/rubik/Rubik-light.woff) format('woff'),
+       url(../fonts/rubik/Rubik-light.ttf) format('truetype'),
+       url(../fonts/rubik/Rubik-light.woff2) format('woff2'),
+       url(../fonts/rubik/Rubik-light.eot) format('embedded-opentype');
+  }
+  $font-type-iespl :  'Rubik Regular' !default;
+
+  // TOKOPEDIA THEME COLOR
+  $color-tokped-green: #43B649;
+  $color-tokped-lightgrey: #EBEBEB;
+  $color-tokped-grey: #808080;
+  $color-tokped-darkgrey: #333333;
+  $color-tokped-white: #ffffff;
+  $color-tokped-lightgreen: #C2F0C4;
+  $color-tokped-yellow: #FFC001;
+  $color-tokped-orange: #FF8900;
+
+  body {
+    font-size: $font-type-iespl !important;
+    background-color: $color-tokped-lightgrey !important;
+    color: $color-tokped-darkgrey !important;
+    overflow-x: hidden;
+  }
+
+  .text-blue {
+    color: $color-tokped-green;
+  }
+
+  .tokped-iespl-logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    z-index: 1;
+    img {
+      margin: auto;
+      display: flex;
+    }
+  }
+
+  .m-l-25 {
+    margin-left: 25px;
+  }
+
+  .only-desk {
+    display: block !important;
+  }
+  .only-mobile {
+    display: none !important;
+  }
