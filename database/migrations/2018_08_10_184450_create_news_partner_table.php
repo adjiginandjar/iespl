@@ -15,8 +15,8 @@ class CreateNewsPartnerTable extends Migration
     {
         Schema::create('sone_esports_news_partner', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('image');
-            $table->string('image');
+            $table->string('name');
+            $table->string('url');
             $table->datetime('last_crawl');
             $table->timestamps();
         });

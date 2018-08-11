@@ -15,19 +15,19 @@ class CreateMatchTable extends Migration
     {
         Schema::create('sone_esports_match', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('url');
-            $table->integer('league_id');
-            $table->integer('game_id');
-            $table->integer('home_team_id');
-            $table->integer('away_team_id');
+            $table->string('url')->nullable();
+            $table->integer('league_id')->references('id')->on('sone_esports_league');;
+            $table->integer('game_id')->references('id')->on('sone_esports_game');;
+            $table->integer('home_team_id')->references('id')->on('sone_esports_team');;
+            $table->integer('away_team_id')->references('id')->on('sone_esports_team');;
             $table->integer('home_score');
             $table->integer('away_score');
             $table->datetime('kick_off');
             $table->boolean('live');
-            $table->text('vod_embed');
-            $table->string('youtube_link');
-            $table->string('another_link');
-            $table->int('yamisok_id');
+            $table->text('vod_embed')->nullable();
+            $table->string('youtube_link')->nullable();
+            $table->string('another_link')->nullable();
+            $table->integer('yamisok_id')->nullable();
             $table->timestamps();
         });
     }

@@ -16,9 +16,9 @@ class CreateGameTable extends Migration
         Schema::create('sone_esports_game', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('nick');
-            $table->string('image');
-            $table->string('yamisok_id');
+            $table->string('nick')->nullable();
+            $table->string('image')->nullable();
+            $table->string('yamisok_id')->nullable();
             $table->timestamps();
         });
     }

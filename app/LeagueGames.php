@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\League;
+use App\Game;
 use Illuminate\Support\Facades\Log;
 
 class LeagueGames extends Model
@@ -19,11 +20,5 @@ class LeagueGames extends Model
       return $this->belongsTo('App\League');
   }
 
-  public static function getGamesInThisLeague(){
-      $activeLeague = League::where('active',true)->first();
-      $games = LeagueGames::where('league_id',$activeLeague->id)->get();
-      Log::info($games->games());
-      return $games;
 
-  }
 }

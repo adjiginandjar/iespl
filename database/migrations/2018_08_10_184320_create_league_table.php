@@ -16,10 +16,10 @@ class CreateLeagueTable extends Migration
         Schema::create('sone_esports_league', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('url');
-            $table->date('start_date');
-            $table->date('end_date');
-            $table->boolean('active');
+            $table->string('url')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->boolean('active')->nullable();
             $table->timestamps();
         });
     }

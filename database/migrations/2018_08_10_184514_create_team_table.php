@@ -17,10 +17,10 @@ class CreateTeamTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('url');
-            $table->string('nick');
-            $table->string('image');
-            $table->string('cover');
-            $table->integer('yamisok_id');
+            $table->string('nick')->nullable();
+            $table->string('image')->nullable();
+            $table->string('cover')->nullable();
+            $table->integer('yamisok_id')->nullable();;
             $table->timestamps();
         });
     }
