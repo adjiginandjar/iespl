@@ -30,18 +30,15 @@
             </div>
             <div class="section section-3">
                 <div class="title-heading">NEWS UPDATE</div>
-                @include('components.homenews')
+                @component('components.homenews',['news'=>$news])
+                @endcomponent
                 <div class="btn-wrapper button-more">
                     <a data-track="ga" track-cat="Home_page" track-action="News_Section_Button" track-label="Lihat Semua" class="btn btn-more" target="_blank" href="https://www.kincir.com/tag/iespl">Lihat Semua</a>
                 </div>
             </div>
             <div class="section section-5">
-                <div class="title-heading">Standing</div>
-                <div class="panel with-nav-tabs panel-default">
-                    @component('components.gamestanding',['games'=>$games])
-                    @endcomponent
-                    @include('components.standing')
-                </div>
+                @component('components.gamestanding',['games'=>$games])
+                @endcomponent
             </div>
       </div>
   </div>

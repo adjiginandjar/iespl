@@ -17,14 +17,14 @@ class CreateNewsTable extends Migration
             $table->increments('id');
             $table->integer('partner_id')->references('id')->on('sone_esports_news_partner');
             $table->string('title');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('description');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->string('link');
             $table->text('content');
             $table->datetime('publish_date');
-            $table->string('author');
-            $table->string('prismic_uid');
+            $table->string('author')->nullable();
+            $table->string('prismic_uid')->nullable();
             $table->timestamps();
         });
     }

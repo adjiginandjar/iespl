@@ -26,14 +26,20 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-      
+      $schedule->call(function ()
+      {
+            $job = new Helper;
+            $job->readRssPartner();
+
+      })->everyMinute();
+
       $schedule->call(function ()
       {
             $job = new Helper;
             $job->syncYamisokDataTeams();
-            $job->syncYamisokDataMatch();
 
       })->everyMinute();
+
       $schedule->call(function ()
       {
             $job = new Helper;
@@ -43,7 +49,7 @@ class Kernel extends ConsoleKernel
 
       // $schedule->call(function ()
       // {
-      //       //Helper::instance()->syncYamisokDataMatch();
+            //Helper::instance()->syncYamisokDataMatch();
       // })->everyMinute();
     }
 
